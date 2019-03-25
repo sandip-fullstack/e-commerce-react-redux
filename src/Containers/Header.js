@@ -11,7 +11,7 @@ const Header = ({addedToBag})=>{
   })
     return (
         <div className="header">
-          <div className={classes}>ADDED TO BAG</div>
+          <div className={classes}>ADDED TO CART</div>
           <div style={{cursor: "pointer"}} onClick={() => browserHistory.push("/")}>My E-Commerce</div>
         </div>
     )
