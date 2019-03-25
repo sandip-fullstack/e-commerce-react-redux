@@ -8,6 +8,7 @@ import {removeItemFromBasket,cleanBasket, applyCoupon} from "../actions/Items";
 import { validate } from "../utils/validator";
 
 import Header from "./Header";
+import EmptyCart from "./EmptyCart";
 
 const Basket = ({items,totalPrice,
                 removeItemFromBasket,cleanBasket, coupon,
@@ -40,7 +41,7 @@ const Basket = ({items,totalPrice,
     const renderContent = () => {
         return (
             <div>
-                {isBasketEmpty && <div> Your shopping cart is empty </div>}
+                {isBasketEmpty && <div> <EmptyCart/> </div>}
                 <div className="table-responsive">
                     <table className="table-bordered table-striped table-condensed cf">
                         <tbody>
@@ -127,11 +128,14 @@ const Basket = ({items,totalPrice,
         <div className="view-container">
             <Header/>
             <div className="container">
+            
                 <div className="row">
-                    <div className="col-md-9">
+                {
+                    <div className={`${isBasketEmpty ? `col-md-12` : `col-md-9`}`}>
                         {renderContent()}
                     </div>
-                    <div className="col-md-3 btn-user-checkout">
+                }
+                    <div className={`col-md-3 btn-user-checkout ${isBasketEmpty && `checkout-center`}`}>
                         {renderSidebar()}
                     </div>
                 </div>
