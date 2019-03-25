@@ -164,3 +164,22 @@
 .cart-icon {
     margin-right: 10px;
 }
+
+.toast-message {
+    min-width: 90px;
+    height: 30px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.top-translate {
+    opacity: 1;
+}
