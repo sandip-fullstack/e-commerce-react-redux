@@ -8,3 +8,4 @@ Demo Link: [Demo](https://ecommerce-sandip.herokuapp.com/)
 - npm start
 - open [localhost](http://localhost:3000)
 
+# Note: Hover on each item to get the add to cart button.
