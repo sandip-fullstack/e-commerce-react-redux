@@ -112,14 +112,10 @@
     overflow: hidden;
 }
 
-.name-font {
-    font-size: 15px;
-    color: #337AB7;
-}
-
 .price-font {
     font-size: 14px;
 }
+
 @media only screen and (min-width: 600px) {
     .thumbnail {
         overflow: auto;
@@ -198,7 +194,7 @@
 }
 
 @-webkit-keyframes bounce {
-    0%, 100% {
+    0%{
       -webkit-transform: translateY(0);
     }
     25% {
@@ -210,9 +206,12 @@
     75% {
         -webkit-transform: translateY(70px);
     }
+    100% {
+        -webkit-transform: translateY(70px);
+    }
   }
   @keyframes bounce {
-    0%, 100% {
+    0% {
         -webkit-transform: translateY(0);
       }
       25% {
@@ -223,6 +222,9 @@
       }
       75% {
           -webkit-transform: translateY(70px);
+      }
+      100% {
+        -webkit-transform: translateY(70px);
       }
   }
 

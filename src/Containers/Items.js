@@ -39,9 +39,9 @@ class Items extends React.Component{
                     </div>
                 </div>
                 <div className="caption">
-                    <div className="name-font">
+                    <b>
                         {item.name}
-                    </div>
+                    </b>
                     <div className="price-font">
                         £{item.price}
                     </div>
