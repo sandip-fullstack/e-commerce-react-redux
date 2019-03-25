@@ -6,5 +6,5 @@ Demo Link: [Demo](https://ecommerce-sandip.herokuapp.com/)
 - clone the repo.
 - npm install
 - npm start
-- open [localhost](localhost:3000)
+- open [localhost](http://localhost:3000)
 
