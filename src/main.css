@@ -188,13 +188,43 @@
     font-size: 10px;
     left: 50%;
     transform: translateX(-50%);
-    opacity: 0;
+    top: -50px;
     transition: opacity 1s ease-in-out;
 }
 
 .top-translate {
-    opacity: 1;
+    animation: bounce 2s linear;
+  -webkit-animation: bounce 2s linear;
 }
+
+@-webkit-keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    25% {
+      -webkit-transform: translateY(70px);
+    }
+    50% {
+        -webkit-transform: translateY(60px);
+    }
+    75% {
+        -webkit-transform: translateY(70px);
+    }
+  }
+  @keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+      }
+      25% {
+        -webkit-transform: translateY(70px);
+      }
+      50% {
+          -webkit-transform: translateY(60px);
+      }
+      75% {
+          -webkit-transform: translateY(70px);
+      }
+  }
 
 .basket-image {
     background-image: url(/images/empty_cart.jpeg);
