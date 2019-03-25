@@ -1,0 +1,166 @@
+.view-container{
+    margin-top:80px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: red;
+}
+
+.item-button{
+    position: relative;
+    height: 60px;
+    top: 100%;
+    transition: all 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f3f3;
+    text-align: center;
+}
+
+.delete-cart{
+    background: url(/images/trash_16x16.gif) no-repeat 0 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.books .book-list{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.well{
+    border-radius: 0 0 4px 4px;
+}
+
+.table-list{
+    text-align: center;
+    width: 100%;
+}
+.table-list td span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.table-list tr{
+    background-color: #f9f9f9;
+    border-bottom:1px solid gray;
+}
+
+.table-list tr td{
+    padding: 8px;
+}
+
+.item-checkout .first-column-checkout{
+    width: 12%;
+}
+
+.item-checkout td{
+    border-bottom: 1px solid #ddd;
+    border-top: none !important;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.table-bordered{
+    border-collapse: separate;
+    border-radius: 4px;
+}
+
+.total-user-checkout{
+    margin-right: 15px;
+}
+
+.btn-user-checkout .btn{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.item-checkout .delete-cart{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#dLabel{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.thumbnail {
+    padding: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.name-font {
+    font-size: 15px;
+    color: #337AB7;
+}
+
+.price-font {
+    font-size: 14px;
+}
+
+.thumbnail:hover > .item-button {
+    transform: translateY(-60px);
+}
+
+.image-class {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+}
+
+.red-text {
+    color: red;
+}
+
+.coupon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.coupn-applied {
+    margin-left: 15px;
+}
+
+.label-container {
+    padding: 5px;
+    border: 1px dotted;
+}
+
+.coupon-text {
+    font-size: 11px;
+    color: #716161;
+}
+
+.header {
+    position: fixed;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    background: #337AB7;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+}
+
+.cart-icon {
+    margin-right: 10px;
+}
