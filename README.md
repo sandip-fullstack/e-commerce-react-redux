@@ -2,7 +2,7 @@ This a sample responsive E-Commerece application where you can view items based 
 
 Demo Link: [Demo](https://ecommerce-sandip.herokuapp.com/)
 
-###Steps to run application:
+### Steps to run application:
 - clone the repo.
 - npm install
 - npm start
