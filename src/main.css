@@ -19,7 +19,16 @@
     background: #f3f3f3;
     text-align: center;
 }
-
+@media only screen and (max-width: 600px) {
+    .item-button {
+        height: 40px;
+        top: calc(100% - 40px);
+    }
+    .item-button .btn {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
 .delete-cart{
     background: url(/images/trash_16x16.gif) no-repeat 0 0;
     display: block;
@@ -111,11 +120,14 @@
 .price-font {
     font-size: 14px;
 }
-
-.thumbnail:hover > .item-button {
-    transform: translateY(-60px);
+@media only screen and (min-width: 600px) {
+    .thumbnail {
+        overflow: auto;
+    }
+    .thumbnail:hover > .item-button {
+        transform: translateY(-60px);
+    }
 }
-
 .image-class {
     background-position: center;
     background-repeat: no-repeat;
