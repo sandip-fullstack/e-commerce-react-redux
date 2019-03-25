@@ -1,13 +1,13 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import { getTotalBasketPrice,getBasketItemsWithCount } from '../selectors/Items';
-import R from 'ramda';
-import {Link} from 'react-router';
+import React from "react";
+import {connect} from "react-redux";
+import { getTotalBasketPrice,getBasketItemsWithCount } from "../selectors/Items";
+import R from "ramda";
+import {Link} from "react-router";
 
-import {removeItemFromBasket,cleanBasket, applyCoupon} from '../actions/Items';
-import { validate } from '../utils/validator';
+import {removeItemFromBasket,cleanBasket, applyCoupon} from "../actions/Items";
+import { validate } from "../utils/validator";
 
-import Header from './Header';
+import Header from "./Header";
 
 const Basket = ({items,totalPrice,
                 removeItemFromBasket,cleanBasket, coupon,

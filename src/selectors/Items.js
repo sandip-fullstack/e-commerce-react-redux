@@ -1,4 +1,4 @@
-import R from 'ramda';
+import R from "ramda";
 
 
 export const getItemsById = (state,id)=>R.prop(id,state.Item);
@@ -20,7 +20,7 @@ export const getCategories = (state)=>{
 };
 
 export const getActiveCategoryId = ownProps=>{
-    return R.path(['params','id'],ownProps);
+    return R.path(["params","id"],ownProps);
 };
 
 export const getBasketItemsWithCount = (state)=>{
@@ -34,7 +34,7 @@ export const getBasketItemsWithCount = (state)=>{
         );
     };
     const itemWithCount = (item)=>{
-        return R.assoc('count',itemCount(item.id),item);
+        return R.assoc("count",itemCount(item.id),item);
     };
     const items = R.compose(
         R.map(itemWithCount),

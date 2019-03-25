@@ -1,21 +1,21 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {Link,withRouter} from 'react-router';
+import React from "react";
+import {connect} from "react-redux";
+import {Link,withRouter} from "react-router";
 
-import {getCategories,getActiveCategoryId} from '../selectors/Items';
+import {getCategories,getActiveCategoryId} from "../selectors/Items";
 
-import {compose} from 'redux';
-import classNames from 'classnames';
-import R from 'ramda';
+import {compose} from "redux";
+import classNames from "classnames";
+import R from "ramda";
 
 
  const Categories = (props)=>{
     const {categories,activeCategoryId} = props;
     const renderCategory = (category,index)=>{
-        const getActiveState = R.propEq('id',activeCategoryId);
+        const getActiveState = R.propEq("id",activeCategoryId);
         const linkClass = classNames({
             "list-group-item" : true,
-            'active': getActiveState(category)
+            "active": getActiveState(category)
         });
         return(
             <Link

@@ -1,6 +1,6 @@
-import React from 'react';
-import BasketCart from './BasketCart';
-import Categories from './Categories';
+import React from "react";
+import BasketCart from "./BasketCart";
+import Categories from "./Categories";
 
 const SideBar = ()=>{
     return(

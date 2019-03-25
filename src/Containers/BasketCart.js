@@ -1,9 +1,9 @@
-import React from 'react';
-import {Link} from 'react-router';
-import {connect} from 'react-redux';
+import React from "react";
+import {Link} from "react-router";
+import {connect} from "react-redux";
 
-import {getTotalBasketCount,getTotalBasketPrice, getBasketItemsWithCount} from '../selectors/Items';
-import { validate } from '../utils/validator';
+import {getTotalBasketCount,getTotalBasketPrice, getBasketItemsWithCount} from "../selectors/Items";
+import { validate } from "../utils/validator";
 
 export const BasketCart = (props)=>{
 

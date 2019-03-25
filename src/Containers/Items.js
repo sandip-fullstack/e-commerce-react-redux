@@ -1,7 +1,7 @@
-import React from 'react';
-import {connect} from 'react-redux';
+import React from "react";
+import {connect} from "react-redux";
 
-import {fetchItems,fetchCategories, addItemToBasket} from '../actions/Items';
+import {fetchItems,fetchCategories, addItemToBasket} from "../actions/Items";
 
 class Items extends React.Component{
 
@@ -28,10 +28,10 @@ class Items extends React.Component{
     renderItem = (item,index)=>{
         const {addItemToBasket} = this.props;
         return (
-            <div className='col-xs-6 col-sm-4 col-lg-4 col-md-4 book-list' key={index}>
+            <div className="col-xs-6 col-sm-4 col-lg-4 col-md-4 book-list" key={index}>
                     <div className="thumbnail image-class" style={{backgroundImage: `url(${item.image})`,
                 opacity: item.quantity <= 0 ? 0.5 : 1}}>
-                    <div className='item-button'>
+                    <div className="item-button">
                         <button className="btn btn-primary"
                                 onClick={()=>addItemToBasket(item.id)} disabled={item.quantity <=0}>
                             Add to cart
