@@ -19,20 +19,16 @@ export const BasketCart = (props)=>{
     }
 
     return(
-        <div className="cart">
-            <div className="dropdown">
-                <Link 
-                    to="/basket"
-                    id="dLabel"
-                    className="btn btn-primary btn-block btn-large"
-                >
-                    <span className="glyphicon glyphicon-shopping-cart cart-icon"></span> 
-                    {
-                        getDiscountedPrice(coupon, totalPrice, items)
-                    }
-                </Link>
-            </div>
-        </div>
+        <Link 
+            to="/basket"
+            id="dLabel"
+            className="btn btn-primary btn-block btn-large"
+        >
+        <span className="glyphicon glyphicon-shopping-cart cart-icon"></span> 
+        {
+            getDiscountedPrice(coupon, totalPrice, items)
+        }
+        </Link>
     );
 };
 
