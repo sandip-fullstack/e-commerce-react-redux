@@ -103,6 +103,10 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     line-height: 18px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -172,6 +176,9 @@
 .cart-icon {
     margin-right: 10px;
 }
+.glyphicon-shopping-cart.cart-icon {
+    font-size: 30px;
+}
 
 .toast-message {
     min-width: 90px;
@@ -198,16 +205,16 @@
       -webkit-transform: translateY(0);
     }
     25% {
-      -webkit-transform: translateY(70px);
+      -webkit-transform: translateY(100px);
     }
     50% {
-        -webkit-transform: translateY(60px);
+        -webkit-transform: translateY(90px);
     }
     75% {
-        -webkit-transform: translateY(70px);
+        -webkit-transform: translateY(100px);
     }
     100% {
-        -webkit-transform: translateY(70px);
+        -webkit-transform: translateY(100px);
     }
   }
   @keyframes bounce {
@@ -215,16 +222,16 @@
         -webkit-transform: translateY(0);
       }
       25% {
-        -webkit-transform: translateY(70px);
+        -webkit-transform: translateY(100px);
       }
       50% {
-          -webkit-transform: translateY(60px);
+          -webkit-transform: translateY(90px);
       }
       75% {
-          -webkit-transform: translateY(70px);
+          -webkit-transform: translateY(100px);
       }
       100% {
-        -webkit-transform: translateY(70px);
+          -webkit-transform: translateY(100px);
       }
   }
 

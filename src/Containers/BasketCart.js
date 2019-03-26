@@ -22,7 +22,7 @@ export const BasketCart = (props)=>{
         <Link 
             to="/basket"
             id="dLabel"
-            className="btn btn-primary btn-block btn-large"
+            className="btn btn-large"
         >
         <span className="glyphicon glyphicon-shopping-cart cart-icon"></span> 
         {
